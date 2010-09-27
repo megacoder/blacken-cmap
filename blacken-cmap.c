@@ -21,9 +21,10 @@
    cc -o blacken-cmap blacken-cmap.c -lX11
  */
 
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <string.h>
 #include <X11/Xlib.h>
 
 #define USAGE "usage: %s [ -loop | -id cmap_id | -white ]\n"
